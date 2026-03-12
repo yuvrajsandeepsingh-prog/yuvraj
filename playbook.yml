@@ -1,0 +1,9 @@
+- name: Configure system for Docker application
+  hosts: localhost
+  connection: local
+  become: false
+
+  tasks:
+    - name: Display configuration message
+      debug:
+        msg: "System configured for Docker application"
